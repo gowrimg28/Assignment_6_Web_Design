@@ -1,0 +1,201 @@
+.trek_categories-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: $spacing-unit * 2;
+
+  @media (min-width: 768px) { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @media (min-width: 1024px) { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .trek_categories {
+    @extend %section-style;
+    padding: $padding-double;
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+
+    h3 {
+      color: var(--primary-color);
+      margin-bottom: var(--spacing-unit);
+    }
+    
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex; 
+      flex-direction: column; 
+      align-items: left;
+
+      li {
+        margin: $spacing-unit * 1.5 0;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: var(--spacing-unit);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .trek_categories-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: $padding-double;
+  }
+}
+
+.season_categories-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: $padding-double;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .season_categories {
+    @extend %section-style;
+    padding: $padding-double;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      color: var(--primary-color);
+      margin-bottom: var(--spacing-unit);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+
+      li {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: var(--spacing-unit);
+
+        img {
+          margin-bottom: math.div($spacing-unit, 2); 
+          border-radius: 5px;
+          width: 100px; 
+          height: auto; 
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .season_categories-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: $padding-double;
+  }
+}
+  
+    .buttons-container {
+        display: flex;
+        align-items: flex-start; 
+        justify-content: space-between; 
+        width: 100%;
+
+        form {
+            flex: 1;
+            margin-right: $padding-double;
+            float: left;
+        }
+
+        button {
+            align-self: flex-start; 
+            margin-top: 0; 
+        }
+    }
+
+    #overview, #requirements, #packing-tips, #what-not-to-take {
+      @extend %section-style;
+      padding: $padding-double;
+      margin-bottom: $padding-double;
+    
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: var(--spacing-unit);
+        text-align: center;
+      }
+    
+      p {
+        margin-bottom: $padding-double;
+        text-align: justify;
+      }
+    }
+    
+    
+    #requirements, #packing-tips, #what-not-to-take {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: $padding-double;
+    
+      @media (min-width: 768px) { 
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    
+      @media (min-width: 1024px) { 
+        grid-template-columns: repeat(3, 1fr); 
+      }
+    
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-unit); 
+    
+        li {
+          display: flex;
+          align-items: flex-start; 
+          gap: math.div($spacing-unit, 2);
+    
+          &::before {
+            content: '\2022'; 
+            color: $primary-color;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: var(--spacing-unit);
+          }
+        }
+      }
+    }
+
+    .pop-image {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+    
+    

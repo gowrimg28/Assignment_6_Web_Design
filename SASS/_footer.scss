@@ -1,0 +1,14 @@
+footer {
+  @include flex-center;   //flexbox layout
+  flex-direction: column;
+  text-align: center;
+  padding: var(--spacing-unit);
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: $padding-double;
+
+  p {
+    margin: 0;
+    padding: var(--spacing-unit);
+  }
+}

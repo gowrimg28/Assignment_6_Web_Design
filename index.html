@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "SASS/style.css">
+    <title>All Time Treks</title>
+</head>
+<body>
+    <header class="header">
+        <h1>All Time Treks</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+        <h2>Explore Popular Treks accross the Globe</h2>
+        <p>Discover year-round trekking destinations. From easy scenic hikes to challenging mountain summits, find the perfect trek for every season and skill level.</p>
+        </section>
+
+        <section id = "categories">
+        <h2>Trek Categories</h2>
+        <div class = "trek_categories-container">
+            <div class="trek_categories">
+            <h3>Easy Treks</h3>
+            <ul>
+                <li>
+                    <img src="images/valleyOfFlowers.jpg" class="pop-image" alt="Valley of Flowers" width="100" height="75">
+                    Valley of Flowers, India
+                </li>
+                <li><img src="images/tere.jpg" class="pop-image" alt="Cinque Terre" width="100" height="75">
+                    Cinque Terre, Italy</li>
+              </ul>
+        </div>
+        <div class = "trek_categories">
+            <h3>Medium Treks</h3>
+            <ul>
+                <li><img src="images/machu.jpg" class="pop-image" alt="Inca Trail, Peru" width="100" height="75">
+                    Inca Trail, Peru</li>
+
+                <li><img src="images/chille.jpg" class="pop-image" alt="Torres del Paine, Chile" width="100" height="75">
+                    Torres del Paine, Chile</li>
+              </ul>
+        </div>
+        <div class = "trek_categories">
+            <h3>Hard Treks</h3>
+            <ul>
+                <li><img src="images/nepal.jpg" class="pop-image" alt="Everest Base Camp, Nepal" width="100" height="75">
+                    Everest Base Camp, Nepal</li>
+                <li><img src="images/Kilimanjaro.jpg" class="pop-image" alt="Mount Kilimanjaro, Tanzania" width="100" height="75">
+                    Mount Kilimanjaro, Tanzania</li>
+              </ul>
+        </div>
+        </div>
+        </section>
+
+        <section id="season">
+        <h2>Treks By Season</h2>
+        <div class="season_categories-container">
+            <div class = "season_categories">
+                <h3>Spring</h3>
+                <ul>
+                    <li><img src="images/japan.jpg" class="pop-image" alt="Japan Alps, Japan" width="100" height="75">
+                        Japan Alps, Japan</li>
+                    <li><img src="images/Anna.jpeg" class="pop-image" alt="Annapurna Circuit, Nepal" width="100" height="75">
+                        Annapurna Circuit, Nepal</li>
+                </ul>
+            </div>
+
+            <div class = "season_categories">
+                <h3>Summer</h3>
+                <ul>
+                    <li><img src="images/John.jpg" class="pop-image" alt="John Muir Trail, USA" width="100" height="75">
+                        John Muir Trail, USA</li>
+                    <li><img src="images/mont.jpg" class="pop-image" alt="Mont Blanc, France" width="100" height="75">
+                        Mont Blanc, France</li>
+                </ul>
+            </div>
+            <div class="season_categories">
+                <h3>Fall</h3>
+                <ul>
+                    <li><img src="images/Groton.png" class="pop-image" alt="Gront State Forest, Vermont" width="100" height="75">
+                        Gront State Forest, Vermont</li>
+                    <li><img src="images/Grind.jpg" class="pop-image" alt="Grindelwald, Switzerland" width="100" height="75">
+                        Grindelwald, Switzerland</li>
+                </ul>
+            </div>
+            <div class = "season_categories">
+                <h3>Winter</h3>
+                <ul>
+                    <li><img src="images/africa.jpg" class="pop-image" alt="Drakensberg, South Africa" width="100" height="75">
+                        Drakensberg, South Africa</li>
+                    <li><img src="images/Chadar.jpg" class="pop-image" alt="Chadar Trek, India" width="100" height="75">
+                        Chadar Trek, India</li>
+                </ul>
+            </div>
+        </div>
+
+        </section>
+
+        <section id="buttons-section">
+            <button onclick="window.location.href='index.html'">Back to Home</button>
+            <div class="buttons-container">
+            <form action="#" method="POST">
+                <label for="email">Enter your email to get the latest trek updates:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <button type="submit">Get Updates</button>
+            </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All Time Treks</p>
+    </footer>
+
+</body>
+</html>

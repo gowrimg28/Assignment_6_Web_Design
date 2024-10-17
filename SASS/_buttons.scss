@@ -1,0 +1,9 @@
+#buttons-section {
+    @include flex-center;
+    flex-direction: column;
+  
+    button {
+      @include button-style($secondary-color);
+      margin-top: $spacing-unit;
+    }
+  }

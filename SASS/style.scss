@@ -1,0 +1,50 @@
+
+@use 'sass:math'; 
+@import 'variables';
+@import 'layout';
+@import 'mixins';
+@import 'buttons';
+@import 'header';
+@import 'footer';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+body {
+    @include font-style($body-font, 1rem);
+    line-height: 1.6;
+    color: var(--font-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @include font-style($heading-font, 2rem, 600);
+    color: var(--primary-color);
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: 1.25rem;
+  }
+  
+

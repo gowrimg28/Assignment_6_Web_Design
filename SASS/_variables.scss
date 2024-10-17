@@ -1,0 +1,19 @@
+$primary-color: #3498db;
+$secondary-color: #b1542c;
+$font-size-base: 16px;
+$spacing-unit: 10px;
+$font-color: #333;
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+$padding-double: $spacing-unit * 2;
+
+:root {
+    --main-font-size: #{rem($font-size-base, 16px)};   //custom properties
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --font-color: #{$font-color};
+    --heading-font: #{$heading-font};
+    --body-font: #{$body-font};
+    --spacing-unit: #{$spacing-unit}px;
+  }
